@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bitcoin</title>
+
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+  <div class="container" style="margin-top:50px">
+    <div class="col-md-12 col-md-push-3">
+
+<div style="font-size:2em">
+
+${{result[0].price_usd}} USD <span style="color:#4CAF50">({{result[0].percent_change_24h}})%</span>
+</div>
+1.00000000 BTC <span style="color:#4CAF50">(0.00%)</span>
+  </div>
+
+<div class="table-responsive col-md-8 col-md-push-3">
+  <table class="table">
+    <thead>
+      <th>Market Cap</th>
+      <th>Volume (24h)</th>
+      <th>Circulating Supply</th>
+      <th>Max Supply</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          ${{result[0].market_cap_usd}} USD <br>
+          ${{result[0].total_supply}} BTC
+        </td>
+        <td>
+          <!-- ${{result[0].24h_volume_usd}} -->
+        </td>
+        <td>
+            {{result[0].total_supply}} BTC
+        </td>
+        <td>
+            {{result[0].max_supply}} BTC
+        </td>
+
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+  </div>
+
+</body>
+</html>
