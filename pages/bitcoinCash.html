@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,53 +8,54 @@
   <title>BitcoinCash</title>
 
 </head>
+
 <body ng-app="myApp" ng-controller="myCtrl">
   <div class="container" style="margin-top:50px">
     <div class="row">
-    <div class="col-md-12 col-md-push-0">
-      <div class=" img col-md-4 col-md-pull-1 col-xs-12">
-      <p class="cc RISE-alt">BitcoinCash</p>
+      <div class="col-md-12 col-md-push-0">
+        <div class=" img col-md-4 col-md-pull-1 col-xs-12">
+          <p class="cc RISE-alt">BitcoinCash</p>
 
+        </div>
+
+        <div style="font-size:2em">
+
+          ${{result[3].price_usd}} USD <span ng-class={ "red":below, "green":above}>({{result[3].percent_change_24h}})%</span>
+        </div>
+        {{result[3].price_btc}} BTC
       </div>
 
-<div style="font-size:2em">
+      <div class="table-responsive col-md-8 col-md-push-3">
+        <table class="table">
+          <thead>
+            <th>Market Cap</th>
+            <th>Volume (24h)</th>
+            <th>Circulating Supply</th>
+            <th>Max Supply</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                ${{result[3].market_cap_usd}} USD <br> ${{result[3].total_supply}} BTC
+              </td>
+              <td>
+                <!-- ${{result[0].24h_volume_usd}} -->
+              </td>
+              <td>
+                {{result[3].total_supply}} BTC
+              </td>
+              <td>
+                {{result[3].max_supply}} BTC
+              </td>
 
-${{result[3].price_usd}} USD <span ng-class={"red":below,"green":above}>({{result[3].percent_change_24h}})%</span>
-</div>
-{{result[3].price_btc}} BTC 
-  </div>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-<div class="table-responsive col-md-8 col-md-push-3">
-  <table class="table">
-    <thead>
-      <th>Market Cap</th>
-      <th>Volume (24h)</th>
-      <th>Circulating Supply</th>
-      <th>Max Supply</th>
-    </thead>
-    <tbody>
-      <tr>
-        <td>
-          ${{result[3].market_cap_usd}} USD <br>
-          ${{result[3].total_supply}} BTC
-        </td>
-        <td>
-          <!-- ${{result[0].24h_volume_usd}} -->
-        </td>
-        <td>
-            {{result[3].total_supply}} BTC
-        </td>
-        <td>
-            {{result[3].max_supply}} BTC
-        </td>
-
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-</div>
+    </div>
   </div>
 
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,105 +12,105 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-   <link rel="stylesheet" href="../node_modules\cryptocoins-icons\webfont/cryptocoins.css">
+  <link rel="stylesheet" href="../node_modules\cryptocoins-icons\webfont/cryptocoins.css">
 
-   <script src="js/app.js"></script>
-<script src="js/model.js"></script>
-<script src="js/controller.js"></script>
-<link rel="stylesheet" href="css/styles.css">
-<script src="js/route.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/model.js"></script>
+  <script src="js/controller.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/route.js"></script>
 
 </head>
-<body ng-app ="myApp" ng-controller="myCtrl" id="refreshed">
+
+<body ng-app="myApp" ng-controller="myCtrl" id="refreshed">
   <div class="container">
 
-<div class="row">
-<div class="col-xl-10">
-  <div class="text-center">
-  <h1>Cryptocurrency Market Capitalizations</h1>
-  </div>
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse"
-        data-target="#myNavbar">
+    <div class="row">
+      <div class="col-xl-10">
+        <div class="text-center">
+          <h1>Cryptocurrency Market Capitalizations</h1>
+        </div>
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
 
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="">
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="">
             Market Cap <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">All</a></li>
-              <li><a href="#">Coins</a></li>
-              <li><a href="#">Tokens</a></li>
-            </ul>
-          </li>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">All</a></li>
+                    <li><a href="#">Coins</a></li>
+                    <li><a href="#">Tokens</a></li>
+                  </ul>
+                </li>
 
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="">
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="">
             Trade Volume <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">24 Hour Volume Rankngs (Currency)</a></li>
-              <li><a href="#">24 Hour Volume Rankngs (Exchange)</a></li>
-              <li><a href="#">Monthly Volume Rankngs (Currency)</a></li>
-            </ul>
-          </li>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">24 Hour Volume Rankngs (Currency)</a></li>
+                    <li><a href="#">24 Hour Volume Rankngs (Exchange)</a></li>
+                    <li><a href="#">Monthly Volume Rankngs (Currency)</a></li>
+                  </ul>
+                </li>
 
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="">
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="">
             Trending <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Gainers and Losers</a></li>
-              <li><a href="#">Recently Added</a></li>
-            </ul>
-          </li>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Gainers and Losers</a></li>
+                    <li><a href="#">Recently Added</a></li>
+                  </ul>
+                </li>
 
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="">
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="">
             Tools <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Global Charts</a></li>
-              <li><a href="#">Historical Snpshots</a></li>
-              <li><a href="#">Currency Converter Calculator</a></li>
-              <li><a href="#">Website Widgets</a></li>
-            </ul>
-          </li>
-        </ul>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Global Charts</a></li>
+                    <li><a href="#">Historical Snpshots</a></li>
+                    <li><a href="#">Currency Converter Calculator</a></li>
+                    <li><a href="#">Website Widgets</a></li>
+                  </ul>
+                </li>
+              </ul>
 
-        <ul class=" navbar-form nav navbar-right">
-          <div class="search">
-          <li>
-          <input type="text" placeholder="Search.." class="form-control">
-           <button class="btn btn-primary"><i class="fa fa-search "></i></button>
-         </li>
-       </div>
-        </ul>
+              <ul class=" navbar-form nav navbar-right">
+                <div class="search">
+                  <li>
+                    <input type="text" placeholder="Search.." class="form-control">
+                    <button class="btn btn-primary"><i class="fa fa-search "></i></button>
+                  </li>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </nav>
       </div>
     </div>
-  </nav>
-</div>
-</div>
-<div>
-<ng-view></ng-view>
+    <div>
+      <ng-view></ng-view>
 
-</div>
-<div ng-hide="!showMe">
-  <div class="row-md-4 row-md-offset-4 text-center">
-    <h3>All Cryptocurrencies</h3>
-  </div>
+    </div>
+    <div ng-hide="!showMe">
+      <div class="row-md-4 row-md-offset-4 text-center">
+        <h3>All Cryptocurrencies</h3>
+      </div>
 
 
-  <div class="row">
-  <div class="col-md-3">
-  Market Cap:
-  <select class="form-control">
+      <div class="row">
+        <div class="col-md-3">
+          Market Cap:
+          <select class="form-control">
   <option value="0">All</option>
   <option value="1">$1 Billion+</option>
   <option value="2">$100 Million - $1 Billion</option>
@@ -118,10 +119,10 @@
   <option value="5">$100k - $1 Million</option>
   <option value="6">$0 - $100k</option>
   </select>
-  </div>
-  <div class="col-md-3">
-  Price:
-  <select class="form-control">
+        </div>
+        <div class="col-md-3">
+          Price:
+          <select class="form-control">
   <option value="0">All</option>
   <option value="1">$100+</option>
   <option value="2">$1 - $100</option>
@@ -129,10 +130,10 @@
   <option value="4">$0.0001 - $0.01</option>
   <option value="5">$0 - $0.0001</option>
   </select>
-  </div>
-  <div class="col-md-3">
-  Volume (24h):
-  <select class="form-control">
+        </div>
+        <div class="col-md-3">
+          Volume (24h):
+          <select class="form-control">
   <option value="0">All</option>
   <option value="1">$10 Million+</option>
   <option value="2">$1 Million+</option>
@@ -140,201 +141,212 @@
   <option value="4">$10k+</option>
   <option value="5">$1k+</option>
   </select>
-  </div>
-  </div>
+        </div>
+      </div>
 
 
-  <div class="row">
+      <div class="row">
 
-  <div class="col-md-5 col-md-push-5 text-right">
-  <ul class="pagination top-paginator">
-  <li>
-  <a href="/"> &larr; Back to Top 100</a>
-  </li>
-  </ul>
-  </div>
+        <div class="col-md-5 col-md-push-5 text-right">
+          <ul class="pagination top-paginator">
+            <li>
+              <a href="/"> &larr; Back to Top 100</a>
+            </li>
+          </ul>
+        </div>
 
-  <div class="col-md-5 col-md-pull-5" style="margin-top:20px;">
-  <ul class="nav nav-tabs" >
-  <li class="active">
-  <a class="dropdown-toggle" data-toggle="dropdown"  href="">All <span class="caret"></span></a>
-  <ul class="dropdown-menu">
-  <li><a href="">Top 100</a></li>
-  <li><a href="">Full List</a></li>
-  </ul>
-  </li>
-  <li>
-  <a class="dropdown-toggle" data-toggle="dropdown"  href="">Coins <span class="caret"></span></a>
-  <ul class="dropdown-menu">
-  <li><a href="">Top 100</a></li>
-  <li><a href="">Full List</a></li>
-  <li class="divider"></li>
-  <li><a href="">Market Cap by Circulating Supply</a></li>
-  <li><a href="">Market Cap by Total Supply</a></li>
-  <li><a href="">Filter Non-Mineable</a></li>
-  </ul>
-  </li>
-  <li>
-  <a class="dropdown-toggle" data-toggle="dropdown"  href="">Tokens <span class="caret"></span> </a>
-  <ul class="dropdown-menu" >
-  <li><a href="">Top 100</a></li>
-  <li><a href="">Full List</a></li>
-  <li class="divider"></li>
-  <li><a href="">Market Cap by Circulating Supply</a></li>
-  <li><a href="">Market Cap by Total Supply</a></li>
-  </ul>
-  </li>
-  </ul>
-  </div>
-  </div>
+        <div class="col-md-5 col-md-pull-5" style="margin-top:20px;">
+          <ul class="nav nav-tabs">
+            <li class="active">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="">All <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="">Top 100</a></li>
+                <li><a href="">Full List</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="dropdown-toggle" data-toggle="dropdown" href="">Coins <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="">Top 100</a></li>
+                <li><a href="">Full List</a></li>
+                <li class="divider"></li>
+                <li><a href="">Market Cap by Circulating Supply</a></li>
+                <li><a href="">Market Cap by Total Supply</a></li>
+                <li><a href="">Filter Non-Mineable</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="dropdown-toggle" data-toggle="dropdown" href="">Tokens <span class="caret"></span> </a>
+              <ul class="dropdown-menu">
+                <li><a href="">Top 100</a></li>
+                <li><a href="">Full List</a></li>
+                <li class="divider"></li>
+                <li><a href="">Market Cap by Circulating Supply</a></li>
+                <li><a href="">Market Cap by Total Supply</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
 
-<div class="table-responsive">
-  <table class="table">
-    <thead>
-      <tr>
-        <th>#</th>
-        <th>Name</th>
-        <th>Symbol</th>
-        <th>Market Cap</th>
-        <th>Price</th>
-        <th>Circulating Supply</th>
-        <th>Volume(24h)</th>
-        <th>% 1h</th>
-        <th>% 24h</th>
-        <th>% 7d</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>1</td>
-        <td> <span class="cc BTC"><a ng-click="change(0)"href="#bitcoin"></span> Bitcoin</a></td>
-        <td>BTC</td>
-        <td>${{result[0].market_cap_usd}}</td>
-        <td>${{result[0].price_usd}}</td>
-        <td>${{result[0].available_supply}}</td>
-        <td></td>
-        <td>${{result[0].percent_change_1h}}</td>
-        <td>${{result[0].percent_change_7d}}</td>
-        <td>${{result[0].percent_change_24h}}</td>
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Symbol</th>
+              <th>Market Cap</th>
+              <th>Price</th>
+              <th>Circulating Supply</th>
+              <th>Volume(24h)</th>
+              <th>% 1h</th>
+              <th>% 24h</th>
+              <th>% 7d</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td> <span class="cc BTC"><a ng-click="change(0)"href="#bitcoin"></span> Bitcoin</a>
+              </td>
+              <td>BTC</td>
+              <td>${{result[0].market_cap_usd}}</td>
+              <td>${{result[0].price_usd}}</td>
+              <td>${{result[0].available_supply}}</td>
+              <td></td>
+              <td>${{result[0].percent_change_1h}}</td>
+              <td>${{result[0].percent_change_7d}}</td>
+              <td>${{result[0].percent_change_24h}}</td>
 
-      </tr>
-      <tr>
-        <td>2</td>
-        <td> <span class="cc ETH"><a ng-click="change(1)" href="#etherium"></span> Etherium </a></td>
-        <td>ETH</td>
-        <td>${{result[1].market_cap_usd}}</td>
-        <td>${{result[1].price_usd}}</td>
-        <td>${{result[1].available_supply}}</td>
-        <td></td>
-        <td>${{result[1].percent_change_1h}}</td>
-        <td>${{result[1].percent_change_7d}}</td>
-        <td>${{result[1].percent_change_24h}}</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td> <span class="cc XRP-alt"><a ng-click="change(2)" href="#ripple"> Ripple</span></a></td>
-        <td>XRP</td>
-        <td>${{result[2].market_cap_usd}}</td>
-        <td>${{result[2].price_usd}}</td>
-        <td>${{result[2].available_supply}}</td>
-        <td></td>
-        <td>${{result[2].percent_change_1h}}</td>
-        <td>${{result[2].percent_change_7d}}</td>
-        <td>${{result[2].percent_change_24h}}</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td> <span class="cc BTCD-alt"><a ng-click="change(3)"href="#bitcoinCash"> BItcoin Cash</span></a></td>
-        <td>BCH</td>
-        <td>${{result[3].market_cap_usd}}</td>
-        <td>${{result[3].price_usd}}</td>
-        <td>${{result[3].available_supply}}</td>
-        <td></td>
-        <td>${{result[3].percent_change_1h}}</td>
-        <td>${{result[3].percent_change_7d}}</td>
-        <td>${{result[3].percent_change_24h}}</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td><span class="cc EOS-alt"><a ng-click="change(4)" href="#eos"> EOS</span></a></td>
-        <td>EOS</td>
-        <td>${{result[4].market_cap_usd}}	</td>
-        <td>${{result[4].price_usd}}</td>
-        <td>${{result[4].available_supply}}</td>
-        <td></td>
-        <td>${{result[4].percent_change_1h}}</td>
-        <td>${{result[4].percent_change_7d}}</td>
-        <td>${{result[4].percent_change_24h}}</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td><span class="cc LTC"><a ng-click="change(5)" href="#litecoin"> Litecoin</span></a></td>
-        <td>LTC</td>
-        <td>${{result[5].market_cap_usd}}</td>
-        <td>${{result[5].price_usd}}</td>
-        <td>${{result[5].available_supply}}</td>
-        <td></td>
-        <td>${{result[5].percent_change_1h}}</td>
-        <td>${{result[5].percent_change_7d}}</td>
-        <td>${{result[5].percent_change_24h}}</td>
-      </tr>
-      <tr>
-        <td>7</td>
-        <td><span class="cc ADA"><a ng-click="change(6)"href="#cardano"> Cardano</span></a></td>
-        <td>ADA</td>
-        <td>${{result[6].market_cap_usd}}</td>
-        <td>${{result[6].price_usd}}</td>
-        <td>${{result[6].available_supply}}</td>
-        <td></td>
-        <td>${{result[6].percent_change_1h}}</td>
-        <td>${{result[6].percent_change_7d}}</td>
-        <td>${{result[6].percent_change_24h}}</td>
-      </tr>
-      <tr>
-        <td>8</td>
-        <td><span class="cc STEEM"><a ng-click="change(7)" href="#stellar"> Stellar</span></a></td>
-        <td>XLM</td>
-        <td>${{result[7].market_cap_usd}}</td>
-        <td>${{result[7].price_usd}}</td>
-        <td>${{result[7].available_supply}}</td>
-        <td></td>
-        <td>${{result[7].percent_change_1h}}</td>
-        <td>${{result[7].percent_change_7d}}</td>
-        <td>${{result[7].percent_change_24h}}</td>
-      </tr>
-      <tr>
-        <td>9</td>
-        <td><span class="cc IOTA"><a ng-click="change(8)" href="#iota"> IOTA</span></a></td>
-        <td>MIOTA</td>
-        <td>${{result[8].market_cap_usd}}</td>
-        <td>${{result[8].price_usd}}</td>
-        <td>${{result[8].available_supply}}</td>
-        <td></td>
-        <td>${{result[8].percent_change_1h}}</td>
-        <td>${{result[8].percent_change_7d}}</td>
-        <td>${{result[8].percent_change_24h}}</td>
-      </tr>
-      <tr>
-        <td>10</td>
-        <td><span class="cc RISE-alt"><a ng-click="change(9)" href="#tron"> TRON</span></a></td>
-        <td>TRX</td>
-        <td>${{result[9].market_cap_usd}}</td>
-        <td>${{result[9].price_usd}}</td>
-        <td>${{result[9].available_supply}}</td>
-        <td></td>
-        <td>${{result[9].percent_change_1h}}</td>
-        <td>${{result[9].percent_change_7d}}</td>
-        <td>${{result[9].percent_change_24h}}</td>
-      </tr>
-    </tbody>
-  </table>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td> <span class="cc ETH"><a ng-click="change(1)" href="#etherium"></span> Etherium </a>
+              </td>
+              <td>ETH</td>
+              <td>${{result[1].market_cap_usd}}</td>
+              <td>${{result[1].price_usd}}</td>
+              <td>${{result[1].available_supply}}</td>
+              <td></td>
+              <td>${{result[1].percent_change_1h}}</td>
+              <td>${{result[1].percent_change_7d}}</td>
+              <td>${{result[1].percent_change_24h}}</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td> <span class="cc XRP-alt"><a ng-click="change(2)" href="#ripple"> Ripple</span></a>
+              </td>
+              <td>XRP</td>
+              <td>${{result[2].market_cap_usd}}</td>
+              <td>${{result[2].price_usd}}</td>
+              <td>${{result[2].available_supply}}</td>
+              <td></td>
+              <td>${{result[2].percent_change_1h}}</td>
+              <td>${{result[2].percent_change_7d}}</td>
+              <td>${{result[2].percent_change_24h}}</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td> <span class="cc BTCD-alt"><a ng-click="change(3)"href="#bitcoinCash"> BItcoin Cash</span></a>
+              </td>
+              <td>BCH</td>
+              <td>${{result[3].market_cap_usd}}</td>
+              <td>${{result[3].price_usd}}</td>
+              <td>${{result[3].available_supply}}</td>
+              <td></td>
+              <td>${{result[3].percent_change_1h}}</td>
+              <td>${{result[3].percent_change_7d}}</td>
+              <td>${{result[3].percent_change_24h}}</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td><span class="cc EOS-alt"><a ng-click="change(4)" href="#eos"> EOS</span></a>
+              </td>
+              <td>EOS</td>
+              <td>${{result[4].market_cap_usd}} </td>
+              <td>${{result[4].price_usd}}</td>
+              <td>${{result[4].available_supply}}</td>
+              <td></td>
+              <td>${{result[4].percent_change_1h}}</td>
+              <td>${{result[4].percent_change_7d}}</td>
+              <td>${{result[4].percent_change_24h}}</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td><span class="cc LTC"><a ng-click="change(5)" href="#litecoin"> Litecoin</span></a>
+              </td>
+              <td>LTC</td>
+              <td>${{result[5].market_cap_usd}}</td>
+              <td>${{result[5].price_usd}}</td>
+              <td>${{result[5].available_supply}}</td>
+              <td></td>
+              <td>${{result[5].percent_change_1h}}</td>
+              <td>${{result[5].percent_change_7d}}</td>
+              <td>${{result[5].percent_change_24h}}</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td><span class="cc ADA"><a ng-click="change(6)"href="#cardano"> Cardano</span></a>
+              </td>
+              <td>ADA</td>
+              <td>${{result[6].market_cap_usd}}</td>
+              <td>${{result[6].price_usd}}</td>
+              <td>${{result[6].available_supply}}</td>
+              <td></td>
+              <td>${{result[6].percent_change_1h}}</td>
+              <td>${{result[6].percent_change_7d}}</td>
+              <td>${{result[6].percent_change_24h}}</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td><span class="cc STEEM"><a ng-click="change(7)" href="#stellar"> Stellar</span></a>
+              </td>
+              <td>XLM</td>
+              <td>${{result[7].market_cap_usd}}</td>
+              <td>${{result[7].price_usd}}</td>
+              <td>${{result[7].available_supply}}</td>
+              <td></td>
+              <td>${{result[7].percent_change_1h}}</td>
+              <td>${{result[7].percent_change_7d}}</td>
+              <td>${{result[7].percent_change_24h}}</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td><span class="cc IOTA"><a ng-click="change(8)" href="#iota"> IOTA</span></a>
+              </td>
+              <td>MIOTA</td>
+              <td>${{result[8].market_cap_usd}}</td>
+              <td>${{result[8].price_usd}}</td>
+              <td>${{result[8].available_supply}}</td>
+              <td></td>
+              <td>${{result[8].percent_change_1h}}</td>
+              <td>${{result[8].percent_change_7d}}</td>
+              <td>${{result[8].percent_change_24h}}</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td><span class="cc RISE-alt"><a ng-click="change(9)" href="#tron"> TRON</span></a>
+              </td>
+              <td>TRX</td>
+              <td>${{result[9].market_cap_usd}}</td>
+              <td>${{result[9].price_usd}}</td>
+              <td>${{result[9].available_supply}}</td>
+              <td></td>
+              <td>${{result[9].percent_change_1h}}</td>
+              <td>${{result[9].percent_change_7d}}</td>
+              <td>${{result[9].percent_change_24h}}</td>
+            </tr>
+          </tbody>
+        </table>
 
-</div>
-</div>
+      </div>
+    </div>
 
 
 
 
 
 </body>
+
 </html>
