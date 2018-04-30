@@ -1,11 +1,18 @@
-app.controller("myCtrl",($scope,myFactory,$location,$route,$rootScope)=>{
-var promise = myFactory.get();
-promise.then(function (data){
-  $scope.result = data;
-  console.log($scope.result);
-},function (err){
-  $scope.result=  err;
-});
+app.controller("myCtrl",($scope,myFactory,$location,$route,$rootScope,$timeout)=>{
+  $scope.reload = () =>{
+    var promise = myFactory.get();
+    promise.then(function (data){
+      $scope.result = data;
+      console.log($scope.result);
+    },function (err){
+      $scope.result=  err;
+    });
+    $timeout(function(){
+      $scope.reload();
+    },50000)
+  }
+
+
 
 $scope.showMe=true
 $rootScope.$on('$locationChangeSuccess', function() {
@@ -33,5 +40,5 @@ $scope.change=(x)=>{
 
   $scope.check(x);
 }
-
+    $scope.reload();
 });
