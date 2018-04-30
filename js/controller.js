@@ -19,7 +19,7 @@ $rootScope.$on('$locationChangeSuccess', function() {
    });
 
 $scope.check = (x)=>{
-  if($scope.result[x].price_usd >0){
+  if($scope.result[x].percent_change_24h >0){
     console.log("gg")
   return $scope.above = true; }
   else {console.log("ggrip")
