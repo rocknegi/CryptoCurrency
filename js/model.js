@@ -3,7 +3,7 @@ app.factory("myFactory", ($http, $q) => {
 
         get() {
             var pr = $q.defer();
-            var url = "https://api.coinmarketcap.com/v1/ticker/?limit=10";
+            var url = "https://api.coinmarketcap.com/v1/ticker/";
             $http.get(url).then(function (data) {
                 pr.resolve(data.data);
 

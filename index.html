@@ -12,14 +12,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
    <link rel="stylesheet" href="../node_modules\cryptocoins-icons\webfont/cryptocoins.css">
-   <!-- Angular Material requires Angular.js Libraries -->
-   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.min.js"></script>
-   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-aria.min.js"></script>
-   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-messages.min.js"></script>
 
-   <!-- Angular Material Library -->
-   <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.8/angular-material.min.js"></script>
-<script src="js/app.js"></script>
+   <script src="js/app.js"></script>
 <script src="js/model.js"></script>
 <script src="js/controller.js"></script>
 <link rel="stylesheet" href="css/styles.css">
@@ -215,61 +209,122 @@
         <td>1</td>
         <td> <span class="cc BTC"><a ng-click="change(0)"href="#bitcoin"></span> Bitcoin</a></td>
         <td>BTC</td>
-        <td>$158,068,090,812</td>
+        <td>${{result[0].market_cap_usd}}</td>
+        <td>${{result[0].price_usd}}</td>
+        <td>${{result[0].available_supply}}</td>
+        <td></td>
+        <td>${{result[0].percent_change_1h}}</td>
+        <td>${{result[0].percent_change_7d}}</td>
+        <td>${{result[0].percent_change_24h}}</td>
+
       </tr>
       <tr>
         <td>2</td>
-        <td> <span class="cc ETH"><a href="#"></span> Etherium </a></td>
+        <td> <span class="cc ETH"><a ng-click="change(1)" href="#etherium"></span> Etherium </a></td>
         <td>ETH</td>
-        <td>$67,235,416,295</td>
+        <td>${{result[1].market_cap_usd}}</td>
+        <td>${{result[1].price_usd}}</td>
+        <td>${{result[1].available_supply}}</td>
+        <td></td>
+        <td>${{result[1].percent_change_1h}}</td>
+        <td>${{result[1].percent_change_7d}}</td>
+        <td>${{result[1].percent_change_24h}}</td>
       </tr>
       <tr>
         <td>3</td>
-        <td> <span class="cc XRP-alt"><a href="#"> Ripple</span></a></td>
+        <td> <span class="cc XRP-alt"><a ng-click="change(2)" href="#ripple"> Ripple</span></a></td>
         <td>XRP</td>
-        <td>$33,242,760,195</td>
+        <td>${{result[2].market_cap_usd}}</td>
+        <td>${{result[2].price_usd}}</td>
+        <td>${{result[2].available_supply}}</td>
+        <td></td>
+        <td>${{result[2].percent_change_1h}}</td>
+        <td>${{result[2].percent_change_7d}}</td>
+        <td>${{result[2].percent_change_24h}}</td>
       </tr>
       <tr>
         <td>4</td>
-        <td> <span class="cc BTCD-alt"><a href="#"> BItcoin Cash</span></a></td>
+        <td> <span class="cc BTCD-alt"><a ng-click="change(3)"href="#bitcoinCash"> BItcoin Cash</span></a></td>
         <td>BCH</td>
-        <td>$24,164,504,858</td>
+        <td>${{result[3].market_cap_usd}}</td>
+        <td>${{result[3].price_usd}}</td>
+        <td>${{result[3].available_supply}}</td>
+        <td></td>
+        <td>${{result[3].percent_change_1h}}</td>
+        <td>${{result[3].percent_change_7d}}</td>
+        <td>${{result[3].percent_change_24h}}</td>
       </tr>
       <tr>
         <td>5</td>
-        <td><span class="cc EOS-alt"><a href="#"> EOS</span></a></td>
+        <td><span class="cc EOS-alt"><a ng-click="change(4)" href="#eos"> EOS</span></a></td>
         <td>EOS</td>
-        <td>$14,154,413,352	</td>
+        <td>${{result[4].market_cap_usd}}	</td>
+        <td>${{result[4].price_usd}}</td>
+        <td>${{result[4].available_supply}}</td>
+        <td></td>
+        <td>${{result[4].percent_change_1h}}</td>
+        <td>${{result[4].percent_change_7d}}</td>
+        <td>${{result[4].percent_change_24h}}</td>
       </tr>
       <tr>
         <td>6</td>
-        <td><span class="cc LTC"><a href="#"> Litecoin</span></a></td>
+        <td><span class="cc LTC"><a ng-click="change(5)" href="#litecoin"> Litecoin</span></a></td>
         <td>LTC</td>
-        <td>$8,549,137,316</td>
+        <td>${{result[5].market_cap_usd}}</td>
+        <td>${{result[5].price_usd}}</td>
+        <td>${{result[5].available_supply}}</td>
+        <td></td>
+        <td>${{result[5].percent_change_1h}}</td>
+        <td>${{result[5].percent_change_7d}}</td>
+        <td>${{result[5].percent_change_24h}}</td>
       </tr>
       <tr>
         <td>7</td>
-        <td><span class="cc ADA"><a href="#"> Cardano</span></a></td>
+        <td><span class="cc ADA"><a ng-click="change(6)"href="#cardano"> Cardano</span></a></td>
         <td>ADA</td>
-        <td>$7,877,940,383</td>
+        <td>${{result[6].market_cap_usd}}</td>
+        <td>${{result[6].price_usd}}</td>
+        <td>${{result[6].available_supply}}</td>
+        <td></td>
+        <td>${{result[6].percent_change_1h}}</td>
+        <td>${{result[6].percent_change_7d}}</td>
+        <td>${{result[6].percent_change_24h}}</td>
       </tr>
       <tr>
         <td>8</td>
-        <td><span class="cc STEEM"><a href="#"> Stellar</span></a></td>
+        <td><span class="cc STEEM"><a ng-click="change(7)" href="#stellar"> Stellar</span></a></td>
         <td>XLM</td>
-        <td>$7,646,526,948</td>
+        <td>${{result[7].market_cap_usd}}</td>
+        <td>${{result[7].price_usd}}</td>
+        <td>${{result[7].available_supply}}</td>
+        <td></td>
+        <td>${{result[7].percent_change_1h}}</td>
+        <td>${{result[7].percent_change_7d}}</td>
+        <td>${{result[7].percent_change_24h}}</td>
       </tr>
       <tr>
         <td>9</td>
-        <td><span class="cc IOTA"><a href="#"> IOTA</span></a></td>
+        <td><span class="cc IOTA"><a ng-click="change(8)" href="#iota"> IOTA</span></a></td>
         <td>MIOTA</td>
-        <td>$5,609,925,970</td>
+        <td>${{result[8].market_cap_usd}}</td>
+        <td>${{result[8].price_usd}}</td>
+        <td>${{result[8].available_supply}}</td>
+        <td></td>
+        <td>${{result[8].percent_change_1h}}</td>
+        <td>${{result[8].percent_change_7d}}</td>
+        <td>${{result[8].percent_change_24h}}</td>
       </tr>
       <tr>
         <td>10</td>
-        <td><span class="cc RISE-alt"><a href="#"> TRON</span></a></td>
+        <td><span class="cc RISE-alt"><a ng-click="change(9)" href="#tron"> TRON</span></a></td>
         <td>TRX</td>
-        <td>$5,170,536,697</td>
+        <td>${{result[9].market_cap_usd}}</td>
+        <td>${{result[9].price_usd}}</td>
+        <td>${{result[9].available_supply}}</td>
+        <td></td>
+        <td>${{result[9].percent_change_1h}}</td>
+        <td>${{result[9].percent_change_7d}}</td>
+        <td>${{result[9].percent_change_24h}}</td>
       </tr>
     </tbody>
   </table>
