@@ -18,8 +18,20 @@ $rootScope.$on('$locationChangeSuccess', function() {
        }
    });
 
-$scope.change=()=>{
+$scope.check = (x)=>{
+  if($scope.result[x].price_usd >0){
+    console.log("gg")
+  return $scope.above = true; }
+  else {console.log("ggrip")
+    return $scope.below = true
+
+  }
+}
+
+$scope.change=(x)=>{
   $scope.showMe=!$scope.showMe
+
+  $scope.check(x);
 }
 
 });

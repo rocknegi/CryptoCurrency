@@ -12,15 +12,21 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
    <link rel="stylesheet" href="../node_modules\cryptocoins-icons\webfont/cryptocoins.css">
+   <!-- Angular Material requires Angular.js Libraries -->
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-aria.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-messages.min.js"></script>
 
+   <!-- Angular Material Library -->
+   <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.8/angular-material.min.js"></script>
 <script src="js/app.js"></script>
 <script src="js/model.js"></script>
 <script src="js/controller.js"></script>
-<link rel="stylesheet" href="../css/styles.css">
+<link rel="stylesheet" href="css/styles.css">
 <script src="js/route.js"></script>
 
 </head>
-<body ng-app ="myApp" ng-controller="myCtrl">
+<body ng-app ="myApp" ng-controller="myCtrl" id="refreshed">
   <div class="container">
 
 <div class="row">
@@ -207,7 +213,7 @@
     <tbody>
       <tr>
         <td>1</td>
-        <td> <span class="cc BTC"><a  ng-click="change()"href="#bitcoin"></span> Bitcoin</a></td>
+        <td> <span class="cc BTC"><a ng-click="change(0)"href="#bitcoin"></span> Bitcoin</a></td>
         <td>BTC</td>
         <td>$158,068,090,812</td>
       </tr>

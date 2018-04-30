@@ -9,11 +9,12 @@
 </head>
 <body ng-app="myApp" ng-controller="myCtrl">
   <div class="container" style="margin-top:50px">
+    <div class="row">
     <div class="col-md-12 col-md-push-3">
 
 <div style="font-size:2em">
 
-${{result[0].price_usd}} USD <span style="color:#4CAF50">({{result[0].percent_change_24h}})%</span>
+${{result[0].price_usd}} USD <span ng-class={"red":below,"green":above}>({{result[0].percent_change_24h}})%</span>
 </div>
 1.00000000 BTC <span style="color:#4CAF50">(0.00%)</span>
   </div>
@@ -46,9 +47,11 @@ ${{result[0].price_usd}} USD <span style="color:#4CAF50">({{result[0].percent_ch
     </tbody>
   </table>
 </div>
+<div class=" img col-md-4 col-md-pull-8">
+<p class="cc BTC">Bitcoin</p>
 
-
-
+</div>
+</div>
   </div>
 
 </body>
